@@ -77,7 +77,7 @@ class CreateRoutingEvent(object):
 
     def getWebGISToken(self):
 
-        token = "azDLy9UAx8Pth2Ruch8hcB-inax-5D_UDelsyrCCpq8e332L-qY6rs--Ox7GH0sT1QvHrnaDFLV32-HBxQ_mWldewpCWBJ0qtAJMOGe5y7_3WatrreyUKfClhUpj7a_skOc3qF5LeuZaOM9MfLhpNQ.."
+        token = "gx7FcRrANS0U-HXutDLWRAhvrHmfqJUCurUHZf85ui1724uvLHis1bzNCkKSelQv8l4zQTu7D2X2gcltEnux-Wv0C__fVu4j00VNYJEQYsZ0zaVnYe76SSSkkE9qeA0RFsXEfKPr8ZjHYzBN36b8wg.."
 
         return token
 
