@@ -54,7 +54,20 @@ class CreateConstructionEvent(object):
         #     parameterType="Required",
         #     direction="Input")
         
+        # ### In Construction Event Attributes ###
+        # in_events_lyr = arcpy.Parameter(
+        #     displayName="Project ID",
+        #     name="in_PID",
+        #     datatype="GPString",
+        #     parameterType="Required",
+        #     direction="Input")   
 
+        # in_events_lyr = arcpy.Parameter(
+        #     displayName="Project ID",
+        #     name="in_PID",
+        #     datatype="GPString",
+        #     parameterType="Required",
+        #     direction="Input")  
         
         # Input Features parameter
         in_events_lyr = arcpy.Parameter(
