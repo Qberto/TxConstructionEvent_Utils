@@ -54,6 +54,8 @@ class CreateConstructionEvent(object):
         #     parameterType="Required",
         #     direction="Input")
         
+
+        
         # Input Features parameter
         in_events_lyr = arcpy.Parameter(
             displayName="Construction Events Service REST URL",
@@ -225,6 +227,8 @@ class CreateConstructionEvent(object):
         # manual_adds = r'[{"geometry": {"paths": [[[-8620384.6147, 4716581.070799999], [-8620336.4642, 4716630.728100002], [-8620234.0502, 4716723.7892], [-8620053.4761, 4716934.951800004]]]},"attributes":{"AnalysisSettings":null,"Version":null,"RouteName":null,"TotalMinutes":null,"TotalMeters":null,"TotalLateMinutes":null,"TotalWaitMinutes":null,"TotalCosts":null,"StartTime":null,"StartUTCOffset":null,"EndTime":null,"EndUTCOffset":null,"Messages":null}}]'
         manual_adds = '[{{"geometry": {{"paths": {0}}},"attributes":{{"AnalysisSettings":null,"Version":null,"RouteName":null,"TotalMinutes":null,"TotalMeters":null,"TotalLateMinutes":null,"TotalWaitMinutes":null,"TotalCosts":null,"StartTime":null,"StartUTCOffset":null,"EndTime":null,"EndUTCOffset":null,"Messages":null}}}}]'.format(paths)
         # manual_adds = '[{"geometry": {"paths": [[[-8620384.6147, 4716581.070799999], [-8620336.4642, 4716630.728100002], [-8620234.0502, 4716723.7892], [-8620053.4761, 4716934.951800004]]]},"attributes":{"AnalysisSettings":null,"Version":null,"RouteName":null,"TotalMinutes":null,"TotalMeters":null,"TotalLateMinutes":null,"TotalWaitMinutes":null,"TotalCosts":null,"StartTime":null,"StartUTCOffset":null,"EndTime":null,"EndUTCOffset":null,"Messages":null}}]'
+
+        # manual_adds = '[{{"geometry": {{"paths": {0}}},"attributes":{{"AnalysisSettings":null,"Version":null,"RouteName":null,"TotalMinutes":null,"TotalMeters":null,"TotalLateMinutes":null,"TotalWaitMinutes":null,"TotalCosts":null,"StartTime":null,"StartUTCOffset":null,"EndTime":null,"EndUTCOffset":null,"Messages":null}}}}]'.format(paths)
 
         # payload = {'f': 'json', 'adds': features}
         payload = {'f': 'json', 'adds': manual_adds}
